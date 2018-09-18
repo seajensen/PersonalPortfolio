@@ -1,0 +1,64 @@
+#welcome-section {
+    text-align: center;
+    height: 100vh;
+    font-size: 15pt;
+    background-color: #fffeea;
+  }
+  @media (max-height:250px) {
+    #welcome-section {
+    text-align: center;
+    height: 100vh;
+    font-size: 12pt;
+  }
+  }
+  h1 {
+    padding-top: 70px;
+    font-family: monospace;
+    color: maroon;
+  }
+  nav {
+    text-align: right;
+    position: fixed;
+    background: #fffeea;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: -40px;
+    padding-bottom: 5px;
+  }
+  nav a {
+    margin-right: 25px;
+  }
+  .navbar-link {
+    text-decoration: none;
+    font-family: monospace;
+    color: maroon;
+    font-size: 15pt;
+  }
+  a {
+    text-decoration: none;
+    font-family: monospace;
+    color: maroon;
+    font-size: 15pt;
+  }
+  #projects {
+    padding-top: 35px;
+    background-color: #fffeea;
+  }
+  #project-wrap {
+    height: 100vh;
+    background-color: #641E16;
+  }
+  #projects a {
+    text-decoration: none;
+    font-family: monospace;
+    color: #fffeea;
+    font-size: 15pt;
+  }
+  #contact-wrap {
+    padding-top: 35px;
+    background-color: #641E16;
+  }
+  #contact {
+    height: 100vh;
+    background-color: #fffeea;
+  }
