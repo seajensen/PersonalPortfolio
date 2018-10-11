@@ -16,6 +16,11 @@
     font-family: monospace;
     color: maroon;
   }
+  h1 {
+    font-family: monospace;
+    color: maroon;
+    font-size: 14pt;
+  }
   nav {
     text-align: right;
     position: fixed;
