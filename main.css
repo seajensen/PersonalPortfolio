@@ -12,7 +12,7 @@
     height: 100vh;
     font-size: 15pt;
   }
-  @media (max-width:350px) {
+  @media (max-width:750px) {
     #welcome-section {
     text-align: center;
     height: 100vh;
