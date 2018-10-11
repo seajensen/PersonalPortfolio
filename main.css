@@ -46,17 +46,17 @@
   }
   #project-wrap {
     height: 100vh;
-    background-color: #641E16;
+    background-color: #fffeea;
   }
   #projects a {
     text-decoration: none;
     font-family: monospace;
-    color: #fffeea;
+    color: maroon;
     font-size: 15pt;
   }
   #contact-wrap {
     padding-top: 35px;
-    background-color: #641E16;
+    background-color: #fffeea;
   }
   #contact {
     height: 100vh;
