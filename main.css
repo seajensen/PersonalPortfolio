@@ -1,8 +1,11 @@
+  body {
+  background-color: #fffeea;
+}
+
 #welcome-section {
     text-align: center;
     height: 100vh;
     font-size: 15pt;
-    background-color: #fffeea;
   }
   @media (max-height:250px) {
     #welcome-section {
@@ -52,7 +55,6 @@
   }
   #project-wrap {
     height: 100vh;
-    background-color: #fffeea;
   }
   #projects a {
     text-decoration: none;
@@ -62,9 +64,7 @@
   }
   #contact-wrap {
     padding-top: 35px;
-    background-color: #fffeea;
   }
   #contact {
     height: 100vh;
-    background-color: #fffeea;
   }
