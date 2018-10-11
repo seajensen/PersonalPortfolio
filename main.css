@@ -22,11 +22,13 @@
   h1 {
     padding-top: 45vh;
     font-family: monospace;
-    color: #450000;
+    color: #01251b;
+    font-weight: bold;
   }
   h2 {
     font-family: monospace;
-    color: #450000;
+    color: #01251b;
+    font-weight: bold;
     font-size: 14pt;
   }
   nav {
@@ -46,13 +48,15 @@
   .navbar-link {
     text-decoration: none;
     font-family: monospace;
-    color: #450000;
+    color: #01251b;
+    font-weight: bold;
     font-size: 15pt;
   }
   a {
     text-decoration: none;
     font-family: monospace;
-    color: #450000;
+    color: #01251b;
+    font-weight: bold;
     font-size: 15pt;
   }
   #projects {
@@ -64,7 +68,8 @@
   #projects a {
     text-decoration: none;
     font-family: monospace;
-    color: #450000;
+    color: #01251b;
+    font-weight: bold;
     font-size: 15pt;
   }
   #contact-wrap {
