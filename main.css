@@ -1,6 +1,8 @@
   body {
   background-image: url("https://i.imgur.com/WT80f0L.jpg");
-  background-position: fixed;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 0.7;
   background-color: #fffeea;
 }
