@@ -7,6 +7,6 @@ fetch("https://pokeapi.co/api/v2/pokemon/92/")
  })
  .then(function(myJson) {
      pokeName.textContent = myJson.name;
-     abilities.textContent = myJson.abilities.ability.name;
+     abilities.textContent = myJson.abilities.ability;
      console.log(myJson);
  });
