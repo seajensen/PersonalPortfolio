@@ -1,4 +1,4 @@
-let pokeName = document.querySelecto(#pokeName)
+let pokeName = document.querySelector("#pokeName")
 
 fetch("https://pokeapi.co/api/v2/pokemon/92/")
  .then(function(response) {
