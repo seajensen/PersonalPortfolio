@@ -1,4 +1,5 @@
 let pokeName = document.querySelector("#pokeName")
+let abilities = document.querySelector("#abilities")
 
 fetch("https://pokeapi.co/api/v2/pokemon/92/")
  .then(function(response) {
@@ -6,5 +7,6 @@ fetch("https://pokeapi.co/api/v2/pokemon/92/")
  })
  .then(function(myJson) {
      pokeName.textContent = myJson.name;
+     abilities.textContent = myJson.abilities.ability.name;
      console.log(myJson);
  });
