@@ -13,7 +13,7 @@ fetch("https://pokeapi.co/api/v2/pokemon/92/")
  });
 
  let cardList = document.querySelector("#cardList")
-import {characters} from ".assets/films.js"
-    console.log(characters);
+import {films} from ".assets/films.js"
+    console.log(films);
 
 
