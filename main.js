@@ -14,3 +14,4 @@ fetch("https://pokeapi.co/api/v2/pokemon/92/")
 
  let cardList = document.querySelector("#cardList")
 import {films} from ".Assets/films.js"
+console.log(films);
