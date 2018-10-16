@@ -42,6 +42,10 @@
     margin-left: -20px;
     padding-bottom: 5px;
   }
+  li {
+    display: flex;
+    align-content: flex-end
+  }
   nav a {
     margin-right: 25px;
   }
