@@ -10,3 +10,7 @@ fetch("https://pokeapi.co/api/v2/pokemon/92/")
      pokeHeight.textContent = "Height: " + myJson.height;
      console.log(myJson);
  });
+
+ let cardList = document.querySelector("#cardList")
+ import { films } from '.assets/films.js'
+ 
