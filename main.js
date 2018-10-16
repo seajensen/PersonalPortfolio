@@ -14,7 +14,7 @@ fetch("https://pokeapi.co/api/v2/pokemon/92/")
 
  let cardList = document.querySelector("#cardList")
 import {films} from "/assets/films.js"
-films.array.forEach(film => {
+films.forEach(film => {
     let listItem = document.createElement("li");
     listItem.textContent = film.title;
     cardList.appendChild(listItem);
