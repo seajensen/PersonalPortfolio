@@ -31,6 +31,13 @@
     font-weight: bold;
     font-size: 14pt;
   }
+  h3 {
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+    font-weight: bold;
+    font-size: 15pt;
+  }
   nav {
     text-align: right;
     position: fixed;
@@ -57,13 +64,6 @@
     font-size: 15pt;
   }
   a {
-    text-decoration: none;
-    font-family: monospace;
-    color: black;
-    font-weight: bold;
-    font-size: 15pt;
-  }
-  h3 {
     text-decoration: none;
     font-family: monospace;
     color: black;
