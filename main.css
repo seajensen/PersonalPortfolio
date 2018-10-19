@@ -89,3 +89,21 @@
   #contact {
     height: 100vh;
   }
+  .h1class {
+    font-family: monospace;
+    color: black;
+    font-weight: bold;
+  }
+  .h2class {
+    font-family: monospace;
+    color: black;
+    font-weight: bold;
+    font-size: 14pt;
+  }
+  .h3class {
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+    font-weight: bold;
+    font-size: 15pt;
+  }
