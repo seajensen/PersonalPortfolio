@@ -107,3 +107,10 @@
     font-weight: bold;
     font-size: 15pt;
   }
+  #api-body {
+    display: flex;
+  }
+  #api {
+    height: 100vh;
+    padding-top: 33px;
+  }
