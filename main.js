@@ -21,13 +21,18 @@ films.forEach(film => {
     listItem.textContent = film.title;
     cardList.appendChild(listItem);
 });
-let charList = document.querySelector("#charList")
-import {vehicles} from "/assets/vehicles.js"
-vehicles.forEach(vehicle => {
-    let listItem = document.createElement("li");
-    listItem.textContent = vehicle.name;
-    charList.appendChild(listItem)
-});
 
+import {vehicles} from "/assets/vehicles.js"
+const vehiclesArray = vehicles.map(vehicles => vehicles.name);
+let randVeh = document.getElementById("randomVeh");
+
+const ranButton = document.getElementById("randomButton")
+
+ranButton.onclick = function() {
+    const x = Math.floor(Math.random() * (39));
+    randVeh.textContent = vehiclesArray[x];
+}
+
+// there are 39 vehicles in the vehiclesArray
 
 
