@@ -114,3 +114,7 @@
     height: 100vh;
     padding-top: 33px;
   }
+  .card {
+    position: relative;
+    z-index: -4;
+  }
