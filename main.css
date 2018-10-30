@@ -115,3 +115,7 @@
     height: 100vh;
     padding-top: 33px;
   }
+  #randomVeh {
+    color: black;
+    font-weight: bold;
+  }
