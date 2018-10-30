@@ -1,9 +1,4 @@
   body {
-  background-image: url("https://i.imgur.com/WT80f0L.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.7;
   background-color: #fffeea;
 }
 
@@ -11,6 +6,11 @@
     text-align: center;
     height: 100vh;
     font-size: 15pt;
+    background-image: url("https://i.imgur.com/WT80f0L.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
   }
   @media (max-width:750px) {
     #welcome-section {
@@ -76,6 +76,7 @@
   }
   #project-wrap {
     height: 100vh;
+    background-color: rgb(155, 129, 179);
   }
   #projects a {
     text-decoration: none;
