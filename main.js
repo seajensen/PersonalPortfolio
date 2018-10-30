@@ -37,4 +37,8 @@ ranButton.onclick = function() {
 // add radio buttons so that the user can do a random film, 
 // character, planet, species, starship, or vehicle from Star Wars
 
+import { senators } from '/assets/senators.js'
+
+console.log(senators)
+
 
