@@ -25,7 +25,7 @@
   h1 {
     padding-top: 45vh;
     font-family: 'cherry cream soda';
-    color: black;
+    color: #fffeea;
     font-weight: bold;
   }
   h2 {
@@ -97,8 +97,8 @@
     height: 100vh;
   }
   .h1class {
-    font-family: monospace;
-    color: black;
+    font-family: 'cherry cream soda';
+    color: #fffeea;
     font-weight: bold;
   }
   .h2class {
