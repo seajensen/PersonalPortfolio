@@ -33,6 +33,15 @@ ranButton.onclick = function() {
     randVeh.textContent = vehiclesArray[x];
 }
 
+import {senators} from "/assets/senators.js"
+
+const senatorsArr = senators.results[0].members;
+
+testText = document.getElementById("senator-id");
+testText.textContent = "HEY";
+
+
+
 // there are 39 vehicles in the vehiclesArray
 // add radio buttons so that the user can do a random film, 
 // character, planet, species, starship, or vehicle from Star Wars

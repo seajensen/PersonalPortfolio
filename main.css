@@ -81,6 +81,16 @@
   }
   #project-wrap {
     height: 100vh;
+  }
+  #projectsWrapper {
+    text-align: center;
+    font-size: 15pt;
+    background-image: url("https://i.imgur.com/0W9O6Z1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    padding-top: 0px;
     background-color: rgb(155, 129, 179);
   }
   #projects a {
@@ -90,8 +100,8 @@
     font-weight: bold;
     font-size: 15pt;
   }
-  #contact-wrap {
-    padding-top: 35px;
+  #contact-link {
+    height: 35px;
   }
   #contact {
     height: 100vh;

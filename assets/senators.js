@@ -1,4 +1,4 @@
-senators [
+export const senators = [
     {
    "status": "OK",
    "copyright": " Copyright (c) 2018 Pro Publica Inc. All Rights Reserved.",
