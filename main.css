@@ -75,7 +75,7 @@
     font-size: 15pt;
   }
   #projects {
-    height: 35px;
+    height: 34px;
     opacity: 0;
     pointer-events: none;
   }
@@ -101,10 +101,9 @@
     font-size: 15pt;
   }
   #contact-link {
-    height: 35px;
+    height: 34px;
   }
   #contact {
-    height: 100vh;
     text-align: center;
     font-size: 15pt;
     background-image: url("https://i.imgur.com/xXaO79x.jpg");
@@ -114,6 +113,7 @@
     opacity: 1;
     padding-top: 0px;
     background-color: rgb(155, 129, 0);
+    height: 100vh;
   }
   .h1class {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -136,9 +136,10 @@
   #api-body {
     display: flex;
   }
-  #api {
+  #api-section {
     height: 100vh;
-    padding-top: 33px;
+    padding-top: 34px;
+    margin-top: -34px;
   }
   #randomVeh {
     color: black;
