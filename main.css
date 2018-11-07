@@ -14,7 +14,7 @@
     padding-top: 0px;
   }
   #welcome-wrap {
-    height: 100vh;
+    height: 112vh;
   }
   @media (max-width:750px) {
     #welcome-section {
@@ -92,6 +92,8 @@
     opacity: 1;
     padding-top: 0px;
     background-color: rgb(155, 129, 179);
+    padding-top: 34px;
+    margin-top: -34px;
   }
   #projects a {
     text-decoration: none;
@@ -99,9 +101,6 @@
     color: black;
     font-weight: bold;
     font-size: 15pt;
-  }
-  #contact-link {
-    height: 34px;
   }
   #contact {
     text-align: center;
@@ -114,6 +113,8 @@
     padding-top: 0px;
     background-color: rgb(155, 129, 0);
     height: 100vh;
+    padding-top: 34px;
+    margin-top: -34px;
   }
   .h1class {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
