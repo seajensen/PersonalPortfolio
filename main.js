@@ -22,6 +22,8 @@ films.forEach(film => {
     cardList.appendChild(listItem);
 });
 
+
+
 import {vehicles} from "/assets/vehicles.js"
 const vehiclesArray = vehicles.map(vehicles => vehicles.name);
 let randVeh = document.getElementById("randomVeh");
@@ -33,12 +35,10 @@ ranButton.onclick = function() {
     randVeh.textContent = vehiclesArray[x];
 }
 
-import {senators} from "/assets/senators.js"
+import {anime} from "/assets/anime.js"
 
-const senatorsArr = senators.results[0].members;
+const animetitle = anime[0][9];
 
-testText = document.getElementById("senator-id");
-testText.textContent = "HEY";
 
 
 
