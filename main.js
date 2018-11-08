@@ -35,9 +35,9 @@ ranButton.onclick = function() {
 
 import {anime} from "/assets/anime.js"
 
-const animetitle = anime[24].title;
+const animetitle = anime[22].title;
 
-const textchange = document.querySelector('h7')
+const textchange = document.getElementById("animetext")
 textchange.textContent = animetitle;
 
 

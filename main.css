@@ -116,6 +116,20 @@
     padding-top: 34px;
     margin-top: -34px;
   }
+  #card-div {
+    text-align: center;
+    font-size: 15pt;
+    background-image: url("https://i.imgur.com/xXaO79x.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    padding-top: 0px;
+    height: 100vh;
+    background-color: rgb(129, 238, 129);
+    padding-top: 34px;
+    margin-top: -34px;
+  }
   .h1class {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fffeea;
