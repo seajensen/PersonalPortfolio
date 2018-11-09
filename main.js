@@ -35,12 +35,12 @@ ranButton.onclick = function() {
 
 import {anime} from "/assets/anime.js"
 
-const animetitle = anime[1].title;
-
-const textchange = document.getElementById("animetext")
-textchange.textContent = animetitle;
-
-document.getElementById("Anime1").src = anime[0].image_url;
+let animeCards = document.querySelector("#card-div")
+anime.forEach(anime => {
+    let imgsrc = document.createElement("img");
+    imgsrc.src = anime.image_url;
+    animeCards.appendChild(imgsrc);
+});
 
 
 
