@@ -129,6 +129,22 @@
     padding-top: 34px;
     margin-top: -34px;
   }
+  .cardWrap {
+    border: 1px solid red;
+    padding: 2px 2px 2px 2px;
+  }
+  .cardWrapInt {
+    border: 1px solid blue;
+    padding: 2px 2px 2px 2px;
+  }
+  .cardFront {
+    border: 1px solid green;
+    padding: 2px 2px 2px 2px;
+  }
+  .cardBack {
+    border: 1px solid orange;
+    padding: 2px 2px 2px 2px;
+  }
   .h1class {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fffeea;
