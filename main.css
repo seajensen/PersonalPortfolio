@@ -5,7 +5,7 @@
 #welcome-section {
     text-align: center;
     font-size: 15pt;
-    background-image: url("https://i.imgur.com/MTobY0A.jpg");
+    background-image: url("../../images/coffee.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -85,7 +85,7 @@
   #projectsWrapper {
     text-align: center;
     font-size: 15pt;
-    background-image: url("https://i.imgur.com/0W9O6Z1.jpg");
+    background-image: url("../../images/wood.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -105,7 +105,7 @@
   #contact {
     text-align: center;
     font-size: 15pt;
-    background-image: url("https://i.imgur.com/xXaO79x.jpg");
+    background-image: url("../../images/phone.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -119,7 +119,6 @@
   #card-div {
     text-align: center;
     font-size: 15pt;
-    background-image: url("https://i.imgur.com/xXaO79x.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
