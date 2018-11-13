@@ -133,41 +133,46 @@
   /* CARD FLIPPING */
 
   .cardWrap {
+    background-color: transparent;
     width: 225px;
     height: 350px;
-    border: 1px solid black;
-    margin: 40px 0;
-    perspective: 600px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
   }
   
+  /* This container is needed to position the front and back side */
   .cardWrapInt {
+    position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 1s;
+    text-align: center;
+    transition: transform 0.8s;
     transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
   }
   
-  .cardWrapInt.is-flipped {
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .cardWrap:hover .cardWrapInt {
     transform: rotateY(180deg);
   }
   
-  .cardFace {
+  /* Position the front and back side */
+  .cardFront, .cardBack {
     position: absolute;
     width: 100%;
     height: 100%;
-    color: white;
-    font-size: 20px;
     backface-visibility: hidden;
   }
   
+  /* Style the front side (fallback if image is missing) */
   .cardFront {
-    background: black;
+    background-color: #bbb;
+    color: black;
   }
   
+  /* Style the back side */
   .cardBack {
-    background: darkslategrey;
+    background-color: dodgerblue;
+    color: white;
     transform: rotateY(180deg);
   }
 

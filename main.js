@@ -58,7 +58,7 @@ anime.forEach(anime => {
     let currentID3 = anime.mal_id + "y";
 
     let cardFront = document.createElement("div");
-    cardFront.className = "cardFace cardFront";
+    cardFront.className = "cardFront";
     cardFront.id = currentID3;
     innerWrap.appendChild(cardFront);
 
@@ -71,7 +71,7 @@ anime.forEach(anime => {
     let currentID4 = anime.mal_id + "z";
 
     let cardBack = document.createElement("div");
-    cardBack.className = "cardFace cardBack";
+    cardBack.className = "cardBack";
     cardBack.id = currentID4;
     innerWrap.appendChild(cardBack);
 
@@ -80,10 +80,6 @@ anime.forEach(anime => {
     let cardInfo = document.createElement("h2");
     cardInfo.textContent = anime.title;
     backside.appendChild(cardInfo);
-
-    let card = document.querySelector('.cardWrapInt');
-    card.addEventListener( 'mouseover', function() {
-    card.classList.toggle('is-flipped');});
 });
 
 
