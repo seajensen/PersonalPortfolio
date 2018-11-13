@@ -136,24 +136,21 @@
     background-color: transparent;
     width: 225px;
     height: 342px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; 
+    border: 1px solid #CCC;
+    margin: 40px 0;
+    perspective: 600px;
   }
   
   /* This container is needed to position the front and back side */
   .cardWrapInt {
-    position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
+    transition: transform 1s;
     transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
   }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .cardWrap:hover .cardWrapInt {
-    transform: rotateY(180deg);
-  }
+
   .cardWrapInt.is-flipped {
     transform: rotateY(180deg);
   }
