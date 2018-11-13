@@ -81,9 +81,9 @@ anime.forEach(anime => {
     cardInfo.textContent = anime.title;
     backside.appendChild(cardInfo);
 
-    let card = document.getElementById(currentID2);
-    card.addEventListener('click', function() {
-    card.classList.toggle('is-flipped');});
+    let cardFlip = document.getElementById(currentID2);
+    cardFlip.addEventListener('click', function() {
+    cardFlip.classList.toggle('is-flipped');});
 });
 
 

@@ -140,8 +140,6 @@
     margin: 40px 0;
     perspective: 600px;
   }
-  
-  /* This container is needed to position the front and back side */
   .cardWrapInt {
     width: 100%;
     height: 100%;
@@ -150,22 +148,17 @@
     cursor: pointer;
     position: relative;
   }
-
   .cardWrapInt.is-flipped {
     transform: rotateY(180deg);
   }
-  
-  /* Position the front and back side */
   .cardFront, .cardBack {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
   }
-  
-  /* Style the front side (fallback if image is missing) */
   .cardFront {
-    background-color: #bbb;
+    background-color: snow;
     color: black;
   }
 
@@ -173,10 +166,9 @@
     width: 100%;
     height: 100%;
   }
-  
-  /* Style the back side */
   .cardBack {
-    background-color: dodgerblue;
+    background-image: url("../../images/cardback.jpg");
+    background-color: black;
     color: white;
     transform: rotateY(180deg);
   }
