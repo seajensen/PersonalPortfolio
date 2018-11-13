@@ -58,7 +58,7 @@ anime.forEach(anime => {
     let currentID3 = anime.mal_id + "y";
 
     let cardFront = document.createElement("div");
-    cardFront.className = "cardFront";
+    cardFront.className = "cardFace cardFront";
     cardFront.id = currentID3;
     innerWrap.appendChild(cardFront);
 
@@ -71,7 +71,7 @@ anime.forEach(anime => {
     let currentID4 = anime.mal_id + "z";
 
     let cardBack = document.createElement("div");
-    cardBack.className = "cardBack";
+    cardBack.className = "cardFace cardBack";
     cardBack.id = currentID4;
     innerWrap.appendChild(cardBack);
 
@@ -82,7 +82,10 @@ anime.forEach(anime => {
     backside.appendChild(cardInfo);
 });
 
-
+var card = document.querySelector('.card');
+card.addEventListener( 'mouseover', function() {
+  card.classList.toggle('is-flipped');
+});
 
 // there are 39 vehicles in the vehiclesArray
 // add radio buttons so that the user can do a random film, 

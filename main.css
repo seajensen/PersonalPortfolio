@@ -133,36 +133,44 @@
   /* CARD FLIPPING */
 
   .cardWrap {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; 
+    width: 200px;
+    height: 260px;
+    border: 1px solid #CCC;
+    margin: 40px 0;
+    perspective: 600px;
   }
+  
   .cardWrapInt {
-    position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
+    transition: transform 1s;
     transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
   }
-  .cardWrap:hover .cardWrapInt {
+  
+  .cardWrapInt.is-flipped {
     transform: rotateY(180deg);
   }
-  .cardFront, .cardBack {
+  
+  .cardFace {
     position: absolute;
     width: 100%;
     height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
     backface-visibility: hidden;
   }
+  
   .cardFront {
-    background-color: #bbb;
-    color: black;
+    background: red;
   }
+  
   .cardBack {
-    background-color: dodgerblue;
-    color: white;
+    background: blue;
     transform: rotateY(180deg);
   }
 
