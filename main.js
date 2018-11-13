@@ -80,12 +80,12 @@ anime.forEach(anime => {
     let cardInfo = document.createElement("h2");
     cardInfo.textContent = anime.title;
     backside.appendChild(cardInfo);
+
+    let card = document.getElementById(currentID2);
+    card.addEventListener('click', function() {
+    card.classList.toggle('is-flipped');});
 });
 
-var card = document.querySelector('.cardWrapInt');
-card.addEventListener('click', function() {
-  card.classList.toggle('is-flipped');
-});
 
 
 
