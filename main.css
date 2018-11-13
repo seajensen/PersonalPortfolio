@@ -135,7 +135,7 @@
   .cardWrap {
     background-color: transparent;
     width: 225px;
-    height: 350px;
+    height: 342px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; 
   }
@@ -152,6 +152,9 @@
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
   .cardWrap:hover .cardWrapInt {
+    transform: rotateY(180deg);
+  }
+  .cardWrapInt.is-flipped {
     transform: rotateY(180deg);
   }
   

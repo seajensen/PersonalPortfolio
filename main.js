@@ -82,6 +82,11 @@ anime.forEach(anime => {
     backside.appendChild(cardInfo);
 });
 
+var card = document.querySelector('.cardWrapInt');
+card.addEventListener( 'mouseover', function() {
+  card.classList.toggle('is-flipped');
+});
+
 
 
 // there are 39 vehicles in the vehiclesArray
