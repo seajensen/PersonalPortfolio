@@ -83,7 +83,7 @@ anime.forEach(anime => {
 });
 
 var card = document.querySelector('.cardWrapInt');
-card.addEventListener(onclick, function() {
+card.addEventListener('click', function() {
   card.classList.toggle('is-flipped');
 });
 
