@@ -171,7 +171,7 @@
     background-color: black;
     color: white;
     transform: rotateY(180deg);
-    margin: 10px;
+    padding: 10px;
     font-size: 11pt;
     font-family: monospace;
   }
