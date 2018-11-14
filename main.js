@@ -77,7 +77,7 @@ anime.forEach(anime => {
 
     let backside = document.getElementById(currentID4)
 
-    let cardInfo = document.createElement("h2");
+    let cardInfo = document.createElement("h8");
     cardInfo.textContent = anime.title;
     backside.appendChild(cardInfo);
 
