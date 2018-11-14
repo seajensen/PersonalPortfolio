@@ -101,6 +101,18 @@ anime.forEach(anime => {
     trailer.src = anime.trailer_url;
     backside.appendChild(trailer);
 
+    let studio = document.createElement("p");
+    studio.textContent = "Studio: " + anime.studios[0].name;
+    backside.appendChild(studio);
+
+    let relYear = document.createElement("p");
+    relYear.textContent = "Year: " + anime.aired.prop.from.year;
+    backside.appendChild(relYear);
+
+    let showSource = document.createElement("p");
+    showSource.textContent = "Source: " + anime.source;
+    backside.appendChild(showSource);
+
 
     let cardFlip = document.getElementById(currentID2);
     cardFlip.addEventListener('click', function() {

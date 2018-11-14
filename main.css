@@ -191,7 +191,8 @@
   .cardBack iframe {
     height: 40%;
     width: 124%;
-    margin-left: -12%
+    margin-left: -12%;
+    margin-bottom: 8px;
   }
   h8 {
     font-size: 10pt;
