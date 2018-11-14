@@ -77,9 +77,22 @@ anime.forEach(anime => {
 
     let backside = document.getElementById(currentID4)
 
-    let cardInfo = document.createElement("h8");
-    cardInfo.textContent = anime.title;
-    backside.appendChild(cardInfo);
+
+    let cardTitle = document.createElement("h8");
+    cardTitle.textContent = anime.title;
+    backside.appendChild(cardTitle);
+
+    let cardBreak = document.createElement("hr");
+    backside.appendChild(cardBreak);
+
+    let showScore = document.createElement("p");
+    showScore.textContent = "Community Score: " + anime.score;
+    backside.appendChild(showScore);
+    
+    let epCount = document.createElement("p");
+    epCount.textContent = "Episodes: " + anime.episodes;
+    backside.appendChild(epCount);
+
 
     let cardFlip = document.getElementById(currentID2);
     cardFlip.addEventListener('click', function() {
