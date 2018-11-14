@@ -93,6 +93,14 @@ anime.forEach(anime => {
     epCount.textContent = "Episodes: " + anime.episodes;
     backside.appendChild(epCount);
 
+    let trailerTitle = document.createElement("p");
+    trailerTitle.textContent = "Trailer:"
+    backside.appendChild(trailerTitle);
+
+    let trailer = document.createElement("iframe");
+    trailer.src = anime.trailer_url;
+    backside.appendChild(trailer);
+
 
     let cardFlip = document.getElementById(currentID2);
     cardFlip.addEventListener('click', function() {
