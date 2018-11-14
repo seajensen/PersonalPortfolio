@@ -132,6 +132,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  #cardtitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fffeea;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    margin-top: -330px;
+    margin-bottom: 30px;
+  }
 
   /* CARD FLIPPING */
 
