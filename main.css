@@ -118,9 +118,8 @@
     margin-top: -34px;
   }
   #card-div {
-    text-align: center;
-    font-size: 15pt;
-    background-attachment: fixed;
+    background-image: url("../../images/surface.jpg");
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1;
@@ -132,14 +131,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  #cardtitle {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #fffeea;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    height: 30px;
-  }
 
   /* CARD FLIPPING */
 
@@ -147,7 +138,7 @@
     background-color: transparent;
     width: 225px;
     height: 342px;
-    margin: 40px 0;
+    margin: 6px 6px 6px 6px;
     perspective: 600px;
   }
   .cardWrapInt {
@@ -166,6 +157,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    box-shadow: 5px 5px 5px black;
   }
   .cardFront {
     background-color: snow;
@@ -219,8 +211,8 @@
   }
   .h3class {
     text-decoration: none;
-    font-family: monospace;
-    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
     font-weight: bold;
     font-size: 15pt;
   }
