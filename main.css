@@ -171,7 +171,7 @@
     background-color: black;
     color: white;
     transform: rotateY(180deg);
-    padding: 14px 14px 14px 14px;
+    padding: 18px 18px 18px 18px;
     font-size: 9pt;
     font-family: monospace;
   }
@@ -179,6 +179,8 @@
     font-size: 9pt;
     font-family: monospace;
     color: white;    
+    line-height: 90%;
+    text-align: left;
   }
 
 /* CARD FLIPPING */
