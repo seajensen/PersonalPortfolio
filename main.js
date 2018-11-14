@@ -113,6 +113,10 @@ anime.forEach(anime => {
     showSource.textContent = "Source: " + anime.source;
     backside.appendChild(showSource);
 
+    let showGenres = document.createElement("p");
+    showGenres.textContent = "Genres: " + anime.genres[0].name + ", " + anime.genres[1].name;
+    backside.appendChild(showGenres);
+
 
     let cardFlip = document.getElementById(currentID2);
     cardFlip.addEventListener('click', function() {
