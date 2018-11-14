@@ -45,6 +45,7 @@
   nav {
     text-align: right;
     position: fixed;
+    z-index: 1000;
     background: #fffeea;
     opacity: 1;
     width: 100vw;
