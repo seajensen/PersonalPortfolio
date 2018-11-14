@@ -171,6 +171,9 @@
     background-color: black;
     color: white;
     transform: rotateY(180deg);
+    margin: 10px;
+    font-size: 11pt;
+    font-family: monospace;
   }
 
 /* CARD FLIPPING */
@@ -200,6 +203,12 @@
     height: 100vh;
     padding-top: 34px;
     margin-top: -34px;
+    background-image: url("../../images/galaxy.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    font-family: impact;
   }
   #randomVeh {
     color: black;
