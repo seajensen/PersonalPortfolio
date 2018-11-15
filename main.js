@@ -84,15 +84,9 @@ const cardFunction = (element => {
     trailerTitle.textContent = "Trailer:"
     cardBack.appendChild(trailerTitle);
 
-    if(element.trailer_url !== null) {
-        let trailer = document.createElement("iframe");
-        trailer.src = element.trailer_url;
-        cardBack.appendChild(trailer);
-    } else {
-        let noTrailer = document.createElement("p");
-        noTrailer.textContent = "The trailer for this title is unavailable.";
-        cardBack.appendChild(noTrailer);
-    }
+    let trailer = document.createElement("iframe");
+    trailer.src = element.trailer_url;
+    cardBack.appendChild(trailer);
 
     let studio = document.createElement("p");
     studio.textContent = "Studio: " + element.studios[0].name;
