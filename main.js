@@ -36,6 +36,7 @@ ranButton.onclick = function() {
 import {anime} from "/assets/anime.js"
 
 let animeCards = document.querySelector("#card-div");
+var locationVar = animeCards;
 
 let cardHeader = document.createElement("h1");
 cardHeader.className = "h1class";
@@ -49,7 +50,7 @@ const cardFunction = (element => {
     let cardWrap = document.createElement("div");
     cardWrap.className = "cardWrap";
     cardWrap.id = currentID;
-    animeCards.appendChild(cardWrap);
+    locationVar.appendChild(cardWrap);
 
     let outerWrap = document.getElementById(currentID)
 
@@ -142,6 +143,8 @@ anime.forEach(cardFunction);
 let newCardDiv = document.createElement("div");
 newCardDiv.id = "new-card-sec";
 animeCards.appendChild(newCardDiv);
+
+locationVar = newCardDiv;
 
 
 let bonusCard = {
