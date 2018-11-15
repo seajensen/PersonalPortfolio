@@ -46,10 +46,6 @@ cardHeader.id = "card-title";
 cardHeader.textContent = "Anime Trading Cards";
 animeCards.appendChild(cardHeader)
 
-let animeButton = document.createElement("button");
-animeButton.textContent = "Press for New Card";
-animeCards.appendChild(animeButton);
-
 const cardFunction = (element => {
     let currentID = element.mal_id;
 
@@ -178,6 +174,10 @@ let bonusCard = {
         name: "Comedy",
     }],
 };
+
+let animeButton = document.createElement("button");
+animeButton.textContent = "Press for New Card";
+animeCards.appendChild(animeButton);
 
 animeButton.addEventListener("click", () => {
     cardFunction(bonusCard)
