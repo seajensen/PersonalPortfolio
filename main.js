@@ -94,22 +94,18 @@ anime.forEach(element => {
     epCount.textContent = "Episodes: " + element.episodes;
     backside.appendChild(epCount);
 
-    if(element.trailer_url !== null) {
-        let trailerTitle = document.createElement("p");
-        trailerTitle.textContent = "Trailer:"
-        backside.appendChild(trailerTitle);
+    let trailerTitle = document.createElement("p");
+    trailerTitle.textContent = "Trailer:"
+    backside.appendChild(trailerTitle);
 
+    if(element.trailer_url !== null) {
         let trailer = document.createElement("iframe");
         trailer.src = element.trailer_url;
         backside.appendChild(trailer);
     } else {
         let noTrailer = document.createElement("p");
-        noTrailer.textContent = "Synopsis:";
+        noTrailer.textContent = "The trailer for this title is unavailable.";
         backside.appendChild(noTrailer);
-
-        let subSynopsis = document.createElement("p");
-        subSynopsis.textContent = element.synopsis;
-        backside.appendChild(subSynopsis);
     }
 
     let studio = document.createElement("p");

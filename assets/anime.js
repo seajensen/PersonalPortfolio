@@ -395,7 +395,7 @@ export const anime = [
             mal_id: 13601,
             url: "https://myanimelist.net/anime/13601/Psycho-Pass",
             image_url: "https://myanimelist.cdn-dena.com/images/anime/5/43399.jpg",
-            trailer_url: "https://www.youtube.com/embed/HKaLfxPtiQ8?enablejsapi=1&wmode=opaque&autoplay=1",
+            trailer_url: null,
             title: "Psycho-Pass",
             title_english: "Psycho-Pass",
             title_japanese: "サイコパス",
