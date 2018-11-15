@@ -146,12 +146,6 @@ const cardFunction = (element => {
 
 anime.forEach(cardFunction);
 
-let newCardDiv = document.createElement("div");
-newCardDiv.id = "new-card-sec";
-animeCards.appendChild(newCardDiv);
-
-locationVar = newCardDiv;
-
 
 let bonusCard = {
     mal_id: 31964,
