@@ -45,68 +45,96 @@ cardHeader.textContent = "Anime Trading Cards";
 animeCards.appendChild(cardHeader)
 
 const cardFunction = (element => {
+    let currentID = element.mal_id;
+
     let cardWrap = document.createElement("div");
     cardWrap.className = "cardWrap";
+    cardWrap.id = currentID;
     locationVar.appendChild(cardWrap);
 
+    let outerWrap = document.getElementById(currentID)
+
+    let currentID2 = element.mal_id + "x";
+    
     let cardWrapInt = document.createElement("div");
     cardWrapInt.className = "cardWrapInt";
-    cardWrap.appendChild(cardWrapInt);
+    cardWrapInt.id = currentID2;
+    outerWrap.appendChild(cardWrapInt);
+
+    let innerWrap = document.getElementById(currentID2)
+
+    let currentID3 = element.mal_id + "y";
 
     let cardFront = document.createElement("div");
     cardFront.className = "cardFront";
-    cardWrapInt.appendChild(cardFront);
+    cardFront.id = currentID3;
+    innerWrap.appendChild(cardFront);
+
+    let frontside = document.getElementById(currentID3)
 
     let imgsrc = document.createElement("img");
     imgsrc.src = element.image_url;
-    cardFront.appendChild(imgsrc);
+    frontside.appendChild(imgsrc);
+
+    let currentID4 = element.mal_id + "z";
 
     let cardBack = document.createElement("div");
     cardBack.className = "cardBack";
-    cardWrap.appendChild(cardBack);
+    cardBack.id = currentID4;
+    innerWrap.appendChild(cardBack);
+
+    let backside = document.getElementById(currentID4)
+
 
     let cardTitle = document.createElement("h8");
     cardTitle.textContent = element.title;
-    cardBack.appendChild(cardTitle);
+    backside.appendChild(cardTitle);
 
     let cardBreak = document.createElement("hr");
-    cardBack.appendChild(cardBreak);
+    backside.appendChild(cardBreak);
 
     let showScore = document.createElement("p");
     showScore.textContent = "Community Score: " + element.score;
-    cardBack.appendChild(showScore);
+    backside.appendChild(showScore);
     
     let epCount = document.createElement("p");
     epCount.textContent = "Episodes: " + element.episodes;
-    cardBack.appendChild(epCount);
+    backside.appendChild(epCount);
 
     let trailerTitle = document.createElement("p");
     trailerTitle.textContent = "Trailer:"
-    cardBack.appendChild(trailerTitle);
+    backside.appendChild(trailerTitle);
 
-    let trailer = document.createElement("iframe");
-    trailer.src = element.trailer_url;
-    cardBack.appendChild(trailer);
+    if(element.trailer_url !== null) {
+        let trailer = document.createElement("iframe");
+        trailer.src = element.trailer_url;
+        backside.appendChild(trailer);
+    } else {
+        let noTrailer = document.createElement("p");
+        noTrailer.textContent = "The trailer for this title is unavailable.";
+        backside.appendChild(noTrailer);
+    }
 
     let studio = document.createElement("p");
     studio.textContent = "Studio: " + element.studios[0].name;
-    cardBack.appendChild(studio);
+    backside.appendChild(studio);
 
     let relYear = document.createElement("p");
     relYear.textContent = "Year: " + element.aired.prop.from.year;
-    cardBack.appendChild(relYear);
+    backside.appendChild(relYear);
 
     let showSource = document.createElement("p");
     showSource.textContent = "Source: " + element.source;
-    cardBack.appendChild(showSource);
+    backside.appendChild(showSource);
 
     let showGenres = document.createElement("p");
     showGenres.textContent = "Genres: " + element.genres[0].name + ", " + element.genres[1].name;
-    cardBack.appendChild(showGenres); 
+    backside.appendChild(showGenres); 
 
 
-    cardWrapInt.addEventListener('click', function() {
-    cardWrapInt.classList.toggle('is-flipped');
+    let cardFlip = document.getElementById(currentID2);
+    cardFlip.addEventListener('click', function() {
+    cardFlip.classList.toggle('is-flipped');
     });
 }); 
 
