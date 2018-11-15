@@ -137,9 +137,10 @@
     justify-content: space-around;
   }
   #card-title {
-    margin-top: -300px;
+    margin-top: -290px;
     margin-bottom: 20px;
     width: 100%;
+    text-shadow: 5px 5px 5px black;
   }
 
   #card-div button {

@@ -43,7 +43,7 @@ cardHeader.id = "card-title";
 cardHeader.textContent = "Anime Trading Cards";
 animeCards.appendChild(cardHeader)
 
-anime.forEach(element => {
+const cardFunction = (element => {
     let currentID = element.mal_id;
 
     let cardWrap = document.createElement("div");
@@ -137,24 +137,47 @@ anime.forEach(element => {
     });
 }); 
 
+anime.forEach(cardFunction);
+
 let newCardDiv = document.createElement("div");
 newCardDiv.id = "new-card-sec";
 animeCards.appendChild(newCardDiv);
+
+let bonusCard = {
+    mal_id: 31964,
+    image_url: "https://myanimelist.cdn-dena.com/images/anime/10/78745.jpg",
+    trailer_url: "https://www.youtube.com/embed/D5fYOnwYkj4?enablejsapi=1&wmode=opaque&autoplay=1",
+    title: "Boku no Hero Academia",
+    source: "Manga",
+    episodes: 13,
+    aired: {
+        prop: {
+            from: {
+                year: 2016
+            },
+        },
+    },
+    score: 8.43,
+    studios: [
+        {
+        name: "Bones",
+    }],
+    genres: [
+        {
+        name: "Action",
+        },
+        {
+        name: "Comedy",
+    }],
+};
+
+
 
 let animeButton = document.createElement("button");
 animeButton.textContent = "Press for New Card";
 animeCards.appendChild(animeButton);
 
-animeButton.addEventListener("click", () => {
-    let testingtext = document.createElement("p");
-    testingtext.textContent = "yo, wassup";
-    newCardDiv.appendChild(testingtext);
-
-    let cardWrap = document.createElement("div");
-    cardWrap.className = "cardWrap";
-    cardWrap.id = currentID;
-    animeCards.appendChild(cardWrap);
-})
+animeButton.addEventListener("click", bonusCard(cardFunction);
 
 
 
