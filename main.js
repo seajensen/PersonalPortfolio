@@ -37,6 +37,12 @@ import {anime} from "/assets/anime.js"
 
 let animeCards = document.querySelector("#card-div")
 
+let cardHeader = document.createElement("h1");
+cardHeader.className = "h1class";
+cardHeader.id = "card-title";
+cardHeader.textContent = "Anime Trading Cards";
+animeCards.appendChild(cardHeader)
+
 anime.forEach(element => {
     let currentID = element.mal_id;
 
@@ -152,6 +158,8 @@ animeButton.addEventListener("click", () => {
 
 
 
+// swap trailer out for synopsis when null on final version. 
+// Synopsis can be pulled out in a box and toggled.
 
 // there are 39 vehicles in the vehiclesArray
 // add radio buttons so that the user can do a random film, 

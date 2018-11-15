@@ -136,6 +136,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  #card-title {
+    margin-top: -300px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
 
   #card-div button {
     margin-top: 40px;
