@@ -37,6 +37,9 @@ import {anime} from "/assets/anime.js"
 
 let animeCards = document.querySelector("#card-div")
 var locationVar = animeCards;
+var x = 0.1;
+var y = 0.2;
+var z = 0.3;
 
 let cardHeader = document.createElement("h1");
 cardHeader.className = "h1class";
@@ -54,7 +57,7 @@ const cardFunction = (element => {
 
     let outerWrap = document.getElementById(currentID)
 
-    let currentID2 = element.mal_id + "x";
+    let currentID2 = element.mal_id + x;
     
     let cardWrapInt = document.createElement("div");
     cardWrapInt.className = "cardWrapInt";
@@ -63,7 +66,7 @@ const cardFunction = (element => {
 
     let innerWrap = document.getElementById(currentID2)
 
-    let currentID3 = element.mal_id + "y";
+    let currentID3 = element.mal_id + y;
 
     let cardFront = document.createElement("div");
     cardFront.className = "cardFront";
@@ -76,7 +79,7 @@ const cardFunction = (element => {
     imgsrc.src = element.image_url;
     frontside.appendChild(imgsrc);
 
-    let currentID4 = element.mal_id + "z";
+    let currentID4 = element.mal_id + z;
 
     let cardBack = document.createElement("div");
     cardBack.className = "cardBack";
