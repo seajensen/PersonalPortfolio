@@ -131,11 +131,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  #new-card-sec {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
   #card-title {
     margin-top: -290px;
     margin-bottom: 20px;
