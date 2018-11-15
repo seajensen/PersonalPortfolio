@@ -36,7 +36,6 @@ ranButton.onclick = function() {
 import {anime} from "/assets/anime.js"
 
 let animeCards = document.querySelector("#card-div")
-var locationVar = animeCards;
 var x = 0.1;
 var y = 0.2;
 var z = 0.3;
@@ -47,13 +46,17 @@ cardHeader.id = "card-title";
 cardHeader.textContent = "Anime Trading Cards";
 animeCards.appendChild(cardHeader)
 
+let animeButton = document.createElement("button");
+animeButton.textContent = "Press for New Card";
+animeCards.appendChild(animeButton);
+
 const cardFunction = (element => {
     let currentID = element.mal_id;
 
     let cardWrap = document.createElement("div");
     cardWrap.className = "cardWrap";
     cardWrap.id = currentID;
-    locationVar.appendChild(cardWrap);
+    animeButton.insertBefore(cardWrap);
 
     let outerWrap = document.getElementById(currentID)
 
@@ -177,12 +180,6 @@ let bonusCard = {
         name: "Comedy",
     }],
 };
-
-
-
-let animeButton = document.createElement("button");
-animeButton.textContent = "Press for New Card";
-animeCards.appendChild(animeButton);
 
 animeButton.addEventListener("click", () => {
     cardFunction(bonusCard)
