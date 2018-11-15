@@ -177,7 +177,90 @@ let animeButton = document.createElement("button");
 animeButton.textContent = "Press for New Card";
 animeCards.appendChild(animeButton);
 
-animeButton.addEventListener("click", bonusCard(cardFunction);
+animeButton.addEventListener("click", () => {
+    let currentID = bonusCard.mal_id;
+    let currentID2 = bonusCard.mal_id + "x";
+    let currentID3 = bonusCard.mal_id + "y";
+    let currentID4 = bonusCard.mal_id + "z";
+
+    let cardWrap = document.createElement("div");
+    cardWrap.className = "cardWrap";
+    cardWrap.id = currentID;
+    animeCards.appendChild(cardWrap);
+
+    let outerWrap = document.getElementById(currentID)
+    
+    let cardWrapInt = document.createElement("div");
+    cardWrapInt.className = "cardWrapInt";
+    cardWrapInt.id = currentID2;
+    document.getElementById(currentID).appendChild(cardWrapInt);
+
+    let innerWrap = document.getElementById(currentID2)
+
+    let cardFront = document.createElement("div");
+    cardFront.className = "cardFront";
+    cardFront.id = currentID3;
+    innerWrap.appendChild(cardFront);
+
+    let frontside = document.getElementById(currentID3)
+
+    let imgsrc = document.createElement("img");
+    imgsrc.src = element.image_url;
+    frontside.appendChild(imgsrc);
+
+    let cardBack = document.createElement("div");
+    cardBack.className = "cardBack";
+    cardBack.id = currentID4;
+    innerWrap.appendChild(cardBack);
+
+    let backside = document.getElementById(currentID4)
+
+
+    let cardTitle = document.createElement("h8");
+    cardTitle.textContent = element.title;
+    backside.appendChild(cardTitle);
+
+    let cardBreak = document.createElement("hr");
+    backside.appendChild(cardBreak);
+
+    let showScore = document.createElement("p");
+    showScore.textContent = "Community Score: " + element.score;
+    backside.appendChild(showScore);
+    
+    let epCount = document.createElement("p");
+    epCount.textContent = "Episodes: " + element.episodes;
+    backside.appendChild(epCount);
+
+    let trailerTitle = document.createElement("p");
+    trailerTitle.textContent = "Trailer:"
+    backside.appendChild(trailerTitle);
+
+    let trailer = document.createElement("iframe");
+    trailer.src = element.trailer_url;
+    backside.appendChild(trailer);
+
+    let studio = document.createElement("p");
+    studio.textContent = "Studio: " + element.studios[0].name;
+    backside.appendChild(studio);
+
+    let relYear = document.createElement("p");
+    relYear.textContent = "Year: " + element.aired.prop.from.year;
+    backside.appendChild(relYear);
+
+    let showSource = document.createElement("p");
+    showSource.textContent = "Source: " + element.source;
+    backside.appendChild(showSource);
+
+    let showGenres = document.createElement("p");
+    showGenres.textContent = "Genres: " + element.genres[0].name + ", " + element.genres[1].name;
+    backside.appendChild(showGenres); 
+
+
+    let cardFlip = document.getElementById(currentID2);
+    cardFlip.addEventListener('click', function() {
+    cardFlip.classList.toggle('is-flipped');
+    });
+})
 
 
 
