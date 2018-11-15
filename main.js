@@ -94,7 +94,7 @@ anime.forEach(element => {
     epCount.textContent = "Episodes: " + element.episodes;
     backside.appendChild(epCount);
 
-    if(anime.trailer_url !== null) {
+    if(element.trailer_url !== null) {
         let trailerTitle = document.createElement("p");
         trailerTitle.textContent = "Trailer:"
         backside.appendChild(trailerTitle);
