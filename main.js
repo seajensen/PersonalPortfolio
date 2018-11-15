@@ -186,6 +186,9 @@ animeCards.appendChild(animeButton);
 
 animeButton.addEventListener("click", () => {
     cardFunction(bonusCard)
+    x++;
+    y++;
+    z++;
 })
 
 
