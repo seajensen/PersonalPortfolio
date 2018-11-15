@@ -56,7 +56,7 @@ const cardFunction = (element => {
     let cardWrap = document.createElement("div");
     cardWrap.className = "cardWrap";
     cardWrap.id = currentID;
-    animeButton.insertBefore(cardWrap);
+    animeCards.appendChild(cardWrap);
 
     let outerWrap = document.getElementById(currentID)
 
@@ -145,6 +145,10 @@ const cardFunction = (element => {
 }); 
 
 anime.forEach(cardFunction);
+
+let newCardDiv = document.createElement("div");
+newCardDiv.id = "new-card-sec";
+animeCards.appendChild(newCardDiv);
 
 
 let bonusCard = {
