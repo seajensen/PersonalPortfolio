@@ -36,8 +36,9 @@ ranButton.onclick = function() {
 import {anime} from "/assets/anime.js"
 
 let animeCards = document.querySelector("#card-div")
-anime.forEach(anime => {
-    let currentID = anime.mal_id;
+
+anime.forEach(element => {
+    let currentID = element.mal_id;
 
     let cardWrap = document.createElement("div");
     cardWrap.className = "cardWrap";
@@ -46,7 +47,7 @@ anime.forEach(anime => {
 
     let outerWrap = document.getElementById(currentID)
 
-    let currentID2 = anime.mal_id + "x";
+    let currentID2 = element.mal_id + "x";
     
     let cardWrapInt = document.createElement("div");
     cardWrapInt.className = "cardWrapInt";
@@ -55,7 +56,7 @@ anime.forEach(anime => {
 
     let innerWrap = document.getElementById(currentID2)
 
-    let currentID3 = anime.mal_id + "y";
+    let currentID3 = element.mal_id + "y";
 
     let cardFront = document.createElement("div");
     cardFront.className = "cardFront";
@@ -65,10 +66,10 @@ anime.forEach(anime => {
     let frontside = document.getElementById(currentID3)
 
     let imgsrc = document.createElement("img");
-    imgsrc.src = anime.image_url;
+    imgsrc.src = element.image_url;
     frontside.appendChild(imgsrc);
 
-    let currentID4 = anime.mal_id + "z";
+    let currentID4 = element.mal_id + "z";
 
     let cardBack = document.createElement("div");
     cardBack.className = "cardBack";
@@ -79,49 +80,79 @@ anime.forEach(anime => {
 
 
     let cardTitle = document.createElement("h8");
-    cardTitle.textContent = anime.title;
+    cardTitle.textContent = element.title;
     backside.appendChild(cardTitle);
 
     let cardBreak = document.createElement("hr");
     backside.appendChild(cardBreak);
 
     let showScore = document.createElement("p");
-    showScore.textContent = "Community Score: " + anime.score;
+    showScore.textContent = "Community Score: " + element.score;
     backside.appendChild(showScore);
     
     let epCount = document.createElement("p");
-    epCount.textContent = "Episodes: " + anime.episodes;
+    epCount.textContent = "Episodes: " + element.episodes;
     backside.appendChild(epCount);
 
-    let trailerTitle = document.createElement("p");
-    trailerTitle.textContent = "Trailer:"
-    backside.appendChild(trailerTitle);
+    if(anime.trailer_url !== null) {
+        let trailerTitle = document.createElement("p");
+        trailerTitle.textContent = "Trailer:"
+        backside.appendChild(trailerTitle);
 
-    let trailer = document.createElement("iframe");
-    trailer.src = anime.trailer_url;
-    backside.appendChild(trailer);
+        let trailer = document.createElement("iframe");
+        trailer.src = element.trailer_url;
+        backside.appendChild(trailer);
+    } else {
+        let noTrailer = document.createElement("p");
+        noTrailer.textContent = "Synopsis:";
+        backside.appendChild(noTrailer);
+
+        let subSynopsis = document.createElement("p");
+        subSynopsis.textContent = element.synopsis;
+        backside.appendChild(subSynopsis);
+    }
 
     let studio = document.createElement("p");
-    studio.textContent = "Studio: " + anime.studios[0].name;
+    studio.textContent = "Studio: " + element.studios[0].name;
     backside.appendChild(studio);
 
     let relYear = document.createElement("p");
-    relYear.textContent = "Year: " + anime.aired.prop.from.year;
+    relYear.textContent = "Year: " + element.aired.prop.from.year;
     backside.appendChild(relYear);
 
     let showSource = document.createElement("p");
-    showSource.textContent = "Source: " + anime.source;
+    showSource.textContent = "Source: " + element.source;
     backside.appendChild(showSource);
 
     let showGenres = document.createElement("p");
-    showGenres.textContent = "Genres: " + anime.genres[0].name + ", " + anime.genres[1].name;
-    backside.appendChild(showGenres);
+    showGenres.textContent = "Genres: " + element.genres[0].name + ", " + element.genres[1].name;
+    backside.appendChild(showGenres); 
 
 
     let cardFlip = document.getElementById(currentID2);
     cardFlip.addEventListener('click', function() {
-    cardFlip.classList.toggle('is-flipped');});
-});
+    cardFlip.classList.toggle('is-flipped');
+    });
+}); 
+
+let newCardDiv = document.createElement("div");
+newCardDiv.id = "new-card-sec";
+animeCards.appendChild(newCardDiv);
+
+let animeButton = document.createElement("button");
+animeButton.textContent = "Press for New Card";
+animeCards.appendChild(animeButton);
+
+animeButton.addEventListener("click", () => {
+    let testingtext = document.createElement("p");
+    testingtext.textContent = "yo, wassup";
+    newCardDiv.appendChild(testingtext);
+
+    let cardWrap = document.createElement("div");
+    cardWrap.className = "cardWrap";
+    cardWrap.id = currentID;
+    animeCards.appendChild(cardWrap);
+})
 
 
 
